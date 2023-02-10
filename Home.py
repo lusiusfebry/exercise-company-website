@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-st.title("The Best Company")
+
+st.set_page_config(layout="wide")
+st.header("The Best Company")
 content = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -10,7 +12,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 """
 st.write(content)
 
-st.header("Our Team")
+st.subheader("Our Team")
 
 col1,col2,col3 = st.columns(3)
 
