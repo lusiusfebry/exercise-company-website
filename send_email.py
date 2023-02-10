@@ -1,7 +1,8 @@
 import smtplib
+import os
 def send_email(user_email,topic,message):
     my_email = "febrypythontest@gmail.com"
-    password = "ofampvnzxxvyrgtl"
+    password = os.getenv("password_email")
 
     to_email = f"{my_email}"
 
